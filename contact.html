@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="structure.html">Структура облачных технологий</a></li>
+                <li><a href="perspectives.html">Перспективы развития</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Контакты</h1>
+        <p>Марков Глеб - разработчик сайта.</p>
+        <p>Если у вас возникли вопросы или предложения, свяжитесь с нами:</p>
+        <form class="contact-form" action="contact-form-handler.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Облачные технологии. Все права защищены.</p>
+    </footer>
+</body>
+</html>

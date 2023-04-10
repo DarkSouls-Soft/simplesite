@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+    display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #7cb9e8;
+}
+
+/* Основное содержимое */
+main {
+    padding: 2rem;
+}
+
+.structure-content, .perspectives-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.structure-item, .perspectives-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.structure-item h2, .perspectives-item h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.structure-item img, .perspectives-item img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Форма контактов */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #7cb9e8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #428bca;
+}
+
+.cloudlink {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cloudlink h2 {
+  margin: 0;
+}
+
+.cloudlink a {
+  color: #868686;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cloudlink a:hover {
+  color: #7cb9e8;
+}
+
+.cloudlink a:visited {
+  color: none;
+}
